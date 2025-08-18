@@ -1,4 +1,3 @@
-"use client";
 import { Button } from "@/components/ui/button";
 import {
   Drawer,
@@ -22,20 +21,27 @@ export function DrawerComponent() {
         <Drawer key={drawer.id}>
           <DrawerTrigger
             className="w-full lg:w-[calc(33.3%-1rem)] 
-               bg-no-repeat bg-center bg-cover
-               p-4 cursor-pointer rounded-lg text-xl"
-            style={{
-              backgroundImage: `url(${drawer.imagem})`,
-            }}
+            bg-no-repeat bg-center bg-cover 
+            flex justify-center items-center p-4 cursor-pointer rounded-lg text-xl relative"
           >
-            <p>{drawer.title}</p>
+            <Image
+              src={drawer.imagem}
+              alt={drawer.title}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover rounded-lg"
+            />
+            <div className="relative z-10 text-foreground font-bold">
+              <p>{drawer.title}</p>
+              <p>{drawer.open}</p>
+            </div>
             <p>{drawer.open}</p>
           </DrawerTrigger>
           <DrawerContent>
             <DrawerHeader>
               <Image
                 src={drawer.imagem}
-                className="mx-auto lg:h-[25rem]"
+                className="mx-auto max-h-[25rem]"
                 width={500}
                 height={500}
                 alt={drawer.imagem}
