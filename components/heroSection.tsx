@@ -10,10 +10,10 @@ export function HeroSection() {
   const videoRef = useRef(null);
 
   const videos = [
-    "/videos/salao-01.mp4",
-    "/videos/salao-02.mp4",
-    "/videos/salao-03.mp4",
-    "/videos/salao-04.mp4",
+    "/videos/salao-01.webm",
+    "/videos/salao-02.webm",
+    "/videos/salao-03.webm",
+    "/videos/salao-04.webm",
   ];
 
   const handleVideoEnd = () => {
