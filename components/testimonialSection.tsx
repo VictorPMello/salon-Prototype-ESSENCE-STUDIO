@@ -13,7 +13,7 @@ import { reviews } from "@/data/reviews";
 
 export function TestimonialsSection() {
   return (
-    <Carousel className="w-2/5">
+    <Carousel className="w-6/7 p-4 lg:p-0 lg:w-2/5">
       <CarouselContent>
         {reviews.map((review) => (
           <CarouselItem key={review.id}>
@@ -35,7 +35,7 @@ export function TestimonialsSection() {
                 {review.description}
               </CardContent>
               <CardFooter className="flex gap-4 justify-center">
-                <Avatar className="h-20 w-20">
+                <Avatar className="lg:h-20 lg:w-20">
                   <AvatarImage src={review.image} />
                 </Avatar>
                 <div className="flex flex-col">
@@ -46,8 +46,8 @@ export function TestimonialsSection() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="cursor-pointer" />
-      <CarouselNext className="cursor-pointer" />
+      <CarouselPrevious className="hidden lg:inline-flex cursor-pointer" />
+      <CarouselNext className="hidden lg:inline-flex cursor-pointer" />
     </Carousel>
   );
 }

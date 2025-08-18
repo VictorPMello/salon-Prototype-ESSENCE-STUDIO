@@ -24,7 +24,7 @@ import { Calendar24 } from "./calendar24";
 
 export function FormSection() {
   return (
-    <Card className="w-1/2">
+    <Card className="rounded-none lg:rounded-2xl lg:w-1/2">
       <CardHeader className="text-center">
         <CardTitle className="text-2xl">Agende Sua Transformação</CardTitle>
         <CardDescription className="text-xl">

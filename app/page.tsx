@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex flex-col gap-10 p-4 row-start-2 items-center">
+      <main className="flex flex-col gap-10 lg:p-4 row-start-2 items-center">
         <HeroSection />
         <Services />
         <Gallery />

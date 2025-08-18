@@ -22,7 +22,7 @@ export function HeroSection() {
   };
 
   return (
-    <Card className="relative overflow-hidden border-none w-5/6">
+    <Card className="relative overflow-hidden rounded-none lg:rounded-2xl border-none w-full lg:w-5/6">
       <video
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
@@ -35,7 +35,7 @@ export function HeroSection() {
         <source src={videos[currentVideo]} type="video/mp4" />
       </video>
 
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 border-none bg-black/40"></div>
 
       <CardContent className="relative z-10 flex flex-col justify-center min-h-[500px] p-8 md:p-16 space-y-6">
         <h1 className="font-bold text-xl md:text-3xl text-white max-w-2xl">

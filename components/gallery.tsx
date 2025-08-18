@@ -4,7 +4,7 @@ import { DrawerComponent } from "./drawerComponet";
 
 export function Gallery() {
   return (
-    <section className="w-full flex flex-col justify-center items-center gap-4">
+    <section className="w-full flex text-center flex-col justify-center items-center gap-4">
       <h1 className="text-2xl">Transformações que Inspiram</h1>
       <h3 className="text-xl">
         Cada cliente é única, cada resultado é uma obra de arte

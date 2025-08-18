@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="w-full flex justify-center items-stretch text-center gap-4 p-4">
-      <Card className="w-1/3">
+    <footer className="w-full flex flex-col lg:flex-row justify-center items-stretch text-center gap-4 p-4">
+      <Card className="lg:w-1/3">
         <CardHeader>
           <CardTitle className="text-2xl">Essence Studio</CardTitle>
         </CardHeader>
@@ -17,7 +17,7 @@ export function Footer() {
         </CardContent>
       </Card>
 
-      <Card className="w-1/3 flex justify-center flex-col">
+      <Card className="lg:w-1/3 flex justify-center flex-col">
         <CardHeader>
           <CardTitle className="text-2xl">Horários</CardTitle>
         </CardHeader>
@@ -37,7 +37,7 @@ export function Footer() {
         </CardContent>
       </Card>
 
-      <Card className="w-1/3 flex justify-center flex-col">
+      <Card className="lg:w-1/3 flex justify-center flex-col">
         <CardHeader>
           <CardTitle className="text-2xl">Redes Sociais</CardTitle>
         </CardHeader>

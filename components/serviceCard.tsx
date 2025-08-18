@@ -16,7 +16,7 @@ export function ServiceCard() {
       {services.map((service) => (
         <Card
           key={service.id}
-          className="flex flex-col w-md h-auto text-center"
+          className="flex flex-col lg:w-md h-auto text-center"
         >
           <CardHeader className="flex-1">
             <CardTitle className="text-2xl">{service.title}</CardTitle>

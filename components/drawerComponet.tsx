@@ -20,7 +20,7 @@ export function DrawerComponent() {
       {drawers.map((drawer) => (
         <Drawer key={drawer.id}>
           <DrawerTrigger
-            className="w-[calc(33.3%-1rem)] 
+            className="w-full lg:w-[calc(33.3%-1rem)] 
                bg-no-repeat bg-center bg-cover
                p-4 cursor-pointer rounded-lg text-xl"
             style={{
@@ -34,7 +34,7 @@ export function DrawerComponent() {
             <DrawerHeader>
               <Image
                 src={drawer.imagem}
-                className="mx-auto h-[35rem]"
+                className="mx-auto lg:h-[25rem]"
                 width={500}
                 height={500}
                 alt={drawer.imagem}
