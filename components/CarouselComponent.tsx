@@ -59,7 +59,7 @@ export function CarouselComponent() {
 
       <h1 className="p-4 text-center text-2xl">Certificações Internacionais</h1>
 
-      <Card className="flex lg:flex-row rounded-none lg:rounded-2xl  w-full p-4 lg:p-0  lg:w-5/6">
+      <Card className="flex lg:flex-row rounded-none lg:rounded-2xl  w-full p-4 lg:w-5/6">
         <div className="flex flex-row-reverse justify-center items-center lg:w-1/3">
           <CardHeader className="w-5/6">
             <CardTitle>L{"'"}Oréal Professional Certified</CardTitle>
